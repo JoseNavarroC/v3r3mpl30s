@@ -1,60 +1,69 @@
 ﻿@using VerEmpleos.Models
 @model LoginViewModel
 @{
+    Layout = null;
     ViewBag.Title = "Log in";
 }
 
-<h2>@ViewBag.Title.</h2>
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
-            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
-            {
-                @Html.AntiForgeryToken()
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                <div class="form-group">
-                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
-                    <div class="col-md-10">
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <div class="checkbox">
-                            @Html.CheckBoxFor(m => m.RememberMe)
-                            @Html.LabelFor(m => m.RememberMe)
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="submit" value="Log in" class="btn btn-default" />
-                    </div>
-                </div>
-                <p>
-                    @Html.ActionLink("Register as a new user", "Register")
-                </p>
-                
-            }
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
-        </section>
-    </div>
-</div>
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+<!--
+Lizania Gtz Díaz
+version 1
+29-04-2016
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Login</title>
+
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/stylelogin.css" rel="stylesheet" />
+    <link href="~/Content/css/icons/style.css" rel="stylesheet" />
+    <link href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+</head>
+<body class="fondologin">
+    <div class="searchbarlog">
+        <div class="search_bar">
+            <a href="#" id="icono" class="icon-search"></a>
+            <input id="bar" placeholder="Buscar Vacantes" maxlength="30">
+        </div>
+    </div>
+    <div class="headerlog">
+        <img class="imlog" src="@Url.Content("~/Content/img/logo.png")" />
+    </div>
+    <!--Login-->
+    <div class="login">
+
+        <div class="contenedor">
+            <form>
+                <div class="formu">
+                    <a href="#" class="icon-mention"></a>
+                    <input id="cont" maxlength="25" type="email" placeholder="Correo / Email" required>
+                </div>
+                <div class="formu">
+                    <a href="#" class="icon-lock"></a>
+                    <input id="cont" maxlength="8" type="password" placeholder="Contraseña" required>
+                </div>
+                <div class="cajalog">
+                    <input class="ver1log" type="checkbox" value="None" name="check" />
+                    <label class="tex7log" for="ver1">Ver lo que escribí</label>
+                </div>
+                <button type="submit" class="btnlogin">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <!--Termina Login-->
+
+    <div>
+        <a class="enlace" href=""><p class="tex2log">¿Olvidaste tu contraseña?</p></a>
+        <a class="enlace" href=""><p class="tex3log">¿Todavía no tienes una cuenta?</p></a>
+        <a class="enlace" href=""><p class="tex4log">Registrate aquí</p></a>
+    </div>
+
+    <script src="~/Scripts/js/bar.js"></script>
+</body>
+</html>
