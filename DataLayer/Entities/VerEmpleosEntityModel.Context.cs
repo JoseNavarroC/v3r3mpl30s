@@ -13,10 +13,10 @@ namespace DataLayer.Entities
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class prueba_verempleosEntities : DbContext
+    public partial class VerEmpleosConn : DbContext
     {
-        public prueba_verempleosEntities()
-            : base("name=prueba_verempleosEntities")
+        public VerEmpleosConn()
+            : base("name=VerEmpleosConn")
         {
         }
     

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="prueba_verempleosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="verempleosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Alerta">
           <Key>
             <PropertyRef Name="Id" />
@@ -1084,7 +1084,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="prueba_verempleosModelStoreContainer">
+        <EntityContainer Name="verempleosModelStoreContainer">
           <EntitySet Name="Alerta" EntityType="Self.Alerta" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AplicacionesIngles" EntityType="Self.AplicacionesIngles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="AplicacionesLPC" EntityType="Self.AplicacionesLPC" Schema="dbo" store:Type="Tables" />
@@ -1321,7 +1321,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="prueba_verempleosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="verempleosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Alerta">
           <Key>
             <PropertyRef Name="Id" />
@@ -2463,7 +2463,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="prueba_verempleosEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="VerEmpleosConn" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Alerta" EntityType="Self.Alerta" />
           <EntitySet Name="AplicacionesIngles" EntityType="Self.AplicacionesIngles" />
           <EntitySet Name="AplicacionesLPC" EntityType="Self.AplicacionesLPC" />
@@ -2665,9 +2665,9 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="prueba_verempleosModelStoreContainer" CdmEntityContainer="prueba_verempleosEntities">
+        <EntityContainerMapping StorageEntityContainer="verempleosModelStoreContainer" CdmEntityContainer="VerEmpleosConn">
           <EntitySetMapping Name="Alerta">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.Alerta">
+            <EntityTypeMapping TypeName="verempleosModel.Alerta">
               <MappingFragment StoreEntitySet="Alerta">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
@@ -2679,7 +2679,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AplicacionesIngles">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.AplicacionesIngles">
+            <EntityTypeMapping TypeName="verempleosModel.AplicacionesIngles">
               <MappingFragment StoreEntitySet="AplicacionesIngles">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdCandidato" ColumnName="IdCandidato" />
@@ -2689,7 +2689,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AplicacionesLPC">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.AplicacionesLPC">
+            <EntityTypeMapping TypeName="verempleosModel.AplicacionesLPC">
               <MappingFragment StoreEntitySet="AplicacionesLPC">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CedulaIdentidad" ColumnName="CedulaIdentidad" />
@@ -2700,7 +2700,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AplicacionesMEOL">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.AplicacionesMEOL">
+            <EntityTypeMapping TypeName="verempleosModel.AplicacionesMEOL">
               <MappingFragment StoreEntitySet="AplicacionesMEOL">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CedulaIdentidad" ColumnName="CedulaIdentidad" />
@@ -2711,7 +2711,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AplicacionesPsicoweb">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.AplicacionesPsicoweb">
+            <EntityTypeMapping TypeName="verempleosModel.AplicacionesPsicoweb">
               <MappingFragment StoreEntitySet="AplicacionesPsicoweb">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="CedulaIdentidad" ColumnName="CedulaIdentidad" />
@@ -2722,7 +2722,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="area">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.area">
+            <EntityTypeMapping TypeName="verempleosModel.area">
               <MappingFragment StoreEntitySet="area">
                 <ScalarProperty Name="idArea" ColumnName="idArea" />
                 <ScalarProperty Name="area1" ColumnName="area" />
@@ -2730,7 +2730,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="candidato">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.candidato">
+            <EntityTypeMapping TypeName="verempleosModel.candidato">
               <MappingFragment StoreEntitySet="candidato">
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
@@ -2758,7 +2758,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="candidatoIdioma">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.candidatoIdioma">
+            <EntityTypeMapping TypeName="verempleosModel.candidatoIdioma">
               <MappingFragment StoreEntitySet="candidatoIdioma">
                 <ScalarProperty Name="nivel" ColumnName="nivel" />
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
@@ -2768,7 +2768,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="candidatoLicencia">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.candidatoLicencia">
+            <EntityTypeMapping TypeName="verempleosModel.candidatoLicencia">
               <MappingFragment StoreEntitySet="candidatoLicencia">
                 <ScalarProperty Name="idLicencia" ColumnName="idLicencia" />
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
@@ -2777,7 +2777,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="candidatoPrograma">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.candidatoPrograma">
+            <EntityTypeMapping TypeName="verempleosModel.candidatoPrograma">
               <MappingFragment StoreEntitySet="candidatoPrograma">
                 <ScalarProperty Name="idPrograma" ColumnName="idPrograma" />
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
@@ -2786,7 +2786,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="candidatoTitulo">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.candidatoTitulo">
+            <EntityTypeMapping TypeName="verempleosModel.candidatoTitulo">
               <MappingFragment StoreEntitySet="candidatoTitulo">
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
                 <ScalarProperty Name="idTitulo" ColumnName="idTitulo" />
@@ -2797,7 +2797,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="candidatoVacante">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.candidatoVacante">
+            <EntityTypeMapping TypeName="verempleosModel.candidatoVacante">
               <MappingFragment StoreEntitySet="candidatoVacante">
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
                 <ScalarProperty Name="idVacante" ColumnName="idVacante" />
@@ -2810,7 +2810,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ciudad">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.ciudad">
+            <EntityTypeMapping TypeName="verempleosModel.ciudad">
               <MappingFragment StoreEntitySet="ciudad">
                 <ScalarProperty Name="idCiudad" ColumnName="idCiudad" />
                 <ScalarProperty Name="Ciudad1" ColumnName="Ciudad" />
@@ -2819,7 +2819,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="configuracion">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.configuracion">
+            <EntityTypeMapping TypeName="verempleosModel.configuracion">
               <MappingFragment StoreEntitySet="configuracion">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdCandidato" ColumnName="IdCandidato" />
@@ -2834,7 +2834,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CuentaPremium">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.CuentaPremium">
+            <EntityTypeMapping TypeName="verempleosModel.CuentaPremium">
               <MappingFragment StoreEntitySet="CuentaPremium">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdCandidato" ColumnName="IdCandidato" />
@@ -2847,7 +2847,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DatosDePW">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.DatosDePW">
+            <EntityTypeMapping TypeName="verempleosModel.DatosDePW">
               <MappingFragment StoreEntitySet="DatosDePW">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Nombre" ColumnName="Nombre" />
@@ -2870,7 +2870,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="empresa">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.empresa">
+            <EntityTypeMapping TypeName="verempleosModel.empresa">
               <MappingFragment StoreEntitySet="empresa">
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
@@ -2899,7 +2899,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="empresaVeCurriculum">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.empresaVeCurriculum">
+            <EntityTypeMapping TypeName="verempleosModel.empresaVeCurriculum">
               <MappingFragment StoreEntitySet="empresaVeCurriculum">
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
                 <ScalarProperty Name="idEmpresa" ColumnName="idEmpresa" />
@@ -2908,7 +2908,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="envioCurriculum">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.envioCurriculum">
+            <EntityTypeMapping TypeName="verempleosModel.envioCurriculum">
               <MappingFragment StoreEntitySet="envioCurriculum">
                 <ScalarProperty Name="candidatoId" ColumnName="candidatoId" />
                 <ScalarProperty Name="fechaEnvio" ColumnName="fechaEnvio" />
@@ -2916,7 +2916,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="estado">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.estado">
+            <EntityTypeMapping TypeName="verempleosModel.estado">
               <MappingFragment StoreEntitySet="estado">
                 <ScalarProperty Name="idEstado" ColumnName="idEstado" />
                 <ScalarProperty Name="Estado1" ColumnName="Estado" />
@@ -2925,7 +2925,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="experienciaLaboral">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.experienciaLaboral">
+            <EntityTypeMapping TypeName="verempleosModel.experienciaLaboral">
               <MappingFragment StoreEntitySet="experienciaLaboral">
                 <ScalarProperty Name="idExperienciaLaboral" ColumnName="idExperienciaLaboral" />
                 <ScalarProperty Name="puestoDesempeniado" ColumnName="puestoDesempeniado" />
@@ -2944,7 +2944,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="giroEmpresa">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.giroEmpresa">
+            <EntityTypeMapping TypeName="verempleosModel.giroEmpresa">
               <MappingFragment StoreEntitySet="giroEmpresa">
                 <ScalarProperty Name="idGiro" ColumnName="idGiro" />
                 <ScalarProperty Name="giro" ColumnName="giro" />
@@ -2952,7 +2952,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="horario">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.horario">
+            <EntityTypeMapping TypeName="verempleosModel.horario">
               <MappingFragment StoreEntitySet="horario">
                 <ScalarProperty Name="idHorario" ColumnName="idHorario" />
                 <ScalarProperty Name="jornada" ColumnName="jornada" />
@@ -2960,7 +2960,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="idioma">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.idioma">
+            <EntityTypeMapping TypeName="verempleosModel.idioma">
               <MappingFragment StoreEntitySet="idioma">
                 <ScalarProperty Name="idIdioma" ColumnName="idIdioma" />
                 <ScalarProperty Name="idioma1" ColumnName="idioma" />
@@ -2968,7 +2968,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="MembresiaEmpresa">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.MembresiaEmpresa">
+            <EntityTypeMapping TypeName="verempleosModel.MembresiaEmpresa">
               <MappingFragment StoreEntitySet="MembresiaEmpresa">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
@@ -2981,7 +2981,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NotificacionPruebas">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.NotificacionPruebas">
+            <EntityTypeMapping TypeName="verempleosModel.NotificacionPruebas">
               <MappingFragment StoreEntitySet="NotificacionPruebas">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
@@ -2995,7 +2995,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pais">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.pais">
+            <EntityTypeMapping TypeName="verempleosModel.pais">
               <MappingFragment StoreEntitySet="pais">
                 <ScalarProperty Name="idPais" ColumnName="idPais" />
                 <ScalarProperty Name="Pais1" ColumnName="Pais" />
@@ -3003,7 +3003,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="preferencia">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.preferencia">
+            <EntityTypeMapping TypeName="verempleosModel.preferencia">
               <MappingFragment StoreEntitySet="preferencia">
                 <ScalarProperty Name="salarioDolar" ColumnName="salarioDolar" />
                 <ScalarProperty Name="dispuestoViajar" ColumnName="dispuestoViajar" />
@@ -3017,7 +3017,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="preferenciaArea">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.preferenciaArea">
+            <EntityTypeMapping TypeName="verempleosModel.preferenciaArea">
               <MappingFragment StoreEntitySet="preferenciaArea">
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
                 <ScalarProperty Name="idArea" ColumnName="idArea" />
@@ -3027,7 +3027,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="preferenciaHorario">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.preferenciaHorario">
+            <EntityTypeMapping TypeName="verempleosModel.preferenciaHorario">
               <MappingFragment StoreEntitySet="preferenciaHorario">
                 <ScalarProperty Name="idHorario" ColumnName="idHorario" />
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
@@ -3036,7 +3036,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="preferenciaPuesto">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.preferenciaPuesto">
+            <EntityTypeMapping TypeName="verempleosModel.preferenciaPuesto">
               <MappingFragment StoreEntitySet="preferenciaPuesto">
                 <ScalarProperty Name="idPuesto" ColumnName="idPuesto" />
                 <ScalarProperty Name="idCandidato" ColumnName="idCandidato" />
@@ -3045,7 +3045,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="pregunta">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.pregunta">
+            <EntityTypeMapping TypeName="verempleosModel.pregunta">
               <MappingFragment StoreEntitySet="pregunta">
                 <ScalarProperty Name="idPregunta" ColumnName="idPregunta" />
                 <ScalarProperty Name="pregunta1" ColumnName="pregunta" />
@@ -3053,7 +3053,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PreguntasIngles">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.PreguntasIngles">
+            <EntityTypeMapping TypeName="verempleosModel.PreguntasIngles">
               <MappingFragment StoreEntitySet="PreguntasIngles">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Pregunta" ColumnName="Pregunta" />
@@ -3062,7 +3062,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PreguntasOpcionesIngles">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.PreguntasOpcionesIngles">
+            <EntityTypeMapping TypeName="verempleosModel.PreguntasOpcionesIngles">
               <MappingFragment StoreEntitySet="PreguntasOpcionesIngles">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdPregunta" ColumnName="IdPregunta" />
@@ -3072,7 +3072,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PrivilegiosCandidato">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.PrivilegiosCandidato">
+            <EntityTypeMapping TypeName="verempleosModel.PrivilegiosCandidato">
               <MappingFragment StoreEntitySet="PrivilegiosCandidato">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
@@ -3083,7 +3083,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="PrivilegiosEmpresa">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.PrivilegiosEmpresa">
+            <EntityTypeMapping TypeName="verempleosModel.PrivilegiosEmpresa">
               <MappingFragment StoreEntitySet="PrivilegiosEmpresa">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
@@ -3094,7 +3094,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="programa">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.programa">
+            <EntityTypeMapping TypeName="verempleosModel.programa">
               <MappingFragment StoreEntitySet="programa">
                 <ScalarProperty Name="idPrograma" ColumnName="idPrograma" />
                 <ScalarProperty Name="nombrePrograma" ColumnName="nombrePrograma" />
@@ -3102,7 +3102,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="puesto">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.puesto">
+            <EntityTypeMapping TypeName="verempleosModel.puesto">
               <MappingFragment StoreEntitySet="puesto">
                 <ScalarProperty Name="idPuesto" ColumnName="idPuesto" />
                 <ScalarProperty Name="puesto1" ColumnName="puesto" />
@@ -3110,7 +3110,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="referencia">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.referencia">
+            <EntityTypeMapping TypeName="verempleosModel.referencia">
               <MappingFragment StoreEntitySet="referencia">
                 <ScalarProperty Name="idReferencia" ColumnName="idReferencia" />
                 <ScalarProperty Name="emailReferencia" ColumnName="emailReferencia" />
@@ -3126,7 +3126,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="referenciaPregunta">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.referenciaPregunta">
+            <EntityTypeMapping TypeName="verempleosModel.referenciaPregunta">
               <MappingFragment StoreEntitySet="referenciaPregunta">
                 <ScalarProperty Name="idReferencia" ColumnName="idReferencia" />
                 <ScalarProperty Name="idPregunta" ColumnName="idPregunta" />
@@ -3136,7 +3136,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="RespuestasIngles">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.RespuestasIngles">
+            <EntityTypeMapping TypeName="verempleosModel.RespuestasIngles">
               <MappingFragment StoreEntitySet="RespuestasIngles">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="IdPregunta" ColumnName="IdPregunta" />
@@ -3146,7 +3146,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="subArea">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.subArea">
+            <EntityTypeMapping TypeName="verempleosModel.subArea">
               <MappingFragment StoreEntitySet="subArea">
                 <ScalarProperty Name="idSubArea" ColumnName="idSubArea" />
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
@@ -3155,7 +3155,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TipoCuentaCandidato">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.TipoCuentaCandidato">
+            <EntityTypeMapping TypeName="verempleosModel.TipoCuentaCandidato">
               <MappingFragment StoreEntitySet="TipoCuentaCandidato">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
@@ -3163,7 +3163,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TipoCuentaEmpresa">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.TipoCuentaEmpresa">
+            <EntityTypeMapping TypeName="verempleosModel.TipoCuentaEmpresa">
               <MappingFragment StoreEntitySet="TipoCuentaEmpresa">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
@@ -3171,7 +3171,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tipoLicencia">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.tipoLicencia">
+            <EntityTypeMapping TypeName="verempleosModel.tipoLicencia">
               <MappingFragment StoreEntitySet="tipoLicencia">
                 <ScalarProperty Name="idLicencia" ColumnName="idLicencia" />
                 <ScalarProperty Name="tipoLicencia1" ColumnName="tipoLicencia" />
@@ -3179,7 +3179,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="titulo">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.titulo">
+            <EntityTypeMapping TypeName="verempleosModel.titulo">
               <MappingFragment StoreEntitySet="titulo">
                 <ScalarProperty Name="idTitulo" ColumnName="idTitulo" />
                 <ScalarProperty Name="grado" ColumnName="grado" />
@@ -3187,7 +3187,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="ubicacion">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.ubicacion">
+            <EntityTypeMapping TypeName="verempleosModel.ubicacion">
               <MappingFragment StoreEntitySet="ubicacion">
                 <ScalarProperty Name="idEstado" ColumnName="idEstado" />
                 <ScalarProperty Name="ciudad" ColumnName="ciudad" />
@@ -3199,7 +3199,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="usuario">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.usuario">
+            <EntityTypeMapping TypeName="verempleosModel.usuario">
               <MappingFragment StoreEntitySet="usuario">
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
                 <ScalarProperty Name="Contrasenia" ColumnName="Contrasenia" />
@@ -3210,7 +3210,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="usuarioFacebook">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.usuarioFacebook">
+            <EntityTypeMapping TypeName="verempleosModel.usuarioFacebook">
               <MappingFragment StoreEntitySet="usuarioFacebook">
                 <ScalarProperty Name="idUsuarioFacebook" ColumnName="idUsuarioFacebook" />
                 <ScalarProperty Name="email" ColumnName="email" />
@@ -3218,7 +3218,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacante">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacante">
+            <EntityTypeMapping TypeName="verempleosModel.vacante">
               <MappingFragment StoreEntitySet="vacante">
                 <ScalarProperty Name="IdVacante" ColumnName="IdVacante" />
                 <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
@@ -3263,7 +3263,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacanteEducacion">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacanteEducacion">
+            <EntityTypeMapping TypeName="verempleosModel.vacanteEducacion">
               <MappingFragment StoreEntitySet="vacanteEducacion">
                 <ScalarProperty Name="idVacanteEducacion" ColumnName="idVacanteEducacion" />
                 <ScalarProperty Name="idVacanteNivelEducacion" ColumnName="idVacanteNivelEducacion" />
@@ -3272,7 +3272,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacanteIdioma">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacanteIdioma">
+            <EntityTypeMapping TypeName="verempleosModel.vacanteIdioma">
               <MappingFragment StoreEntitySet="vacanteIdioma">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="idIdioma" ColumnName="idIdioma" />
@@ -3281,7 +3281,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacanteNivelEducacion">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacanteNivelEducacion">
+            <EntityTypeMapping TypeName="verempleosModel.vacanteNivelEducacion">
               <MappingFragment StoreEntitySet="vacanteNivelEducacion">
                 <ScalarProperty Name="idVacanteNivelEducacion" ColumnName="idVacanteNivelEducacion" />
                 <ScalarProperty Name="EduNivel" ColumnName="EduNivel" />
@@ -3289,7 +3289,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacanteNivelIdioma">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacanteNivelIdioma">
+            <EntityTypeMapping TypeName="verempleosModel.vacanteNivelIdioma">
               <MappingFragment StoreEntitySet="vacanteNivelIdioma">
                 <ScalarProperty Name="idVacanteNivelIdioma" ColumnName="idVacanteNivelIdioma" />
                 <ScalarProperty Name="Nivel" ColumnName="Nivel" />
@@ -3297,7 +3297,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacanteStatusEducacion">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacanteStatusEducacion">
+            <EntityTypeMapping TypeName="verempleosModel.vacanteStatusEducacion">
               <MappingFragment StoreEntitySet="vacanteStatusEducacion">
                 <ScalarProperty Name="idVacanteStatusEducacion" ColumnName="idVacanteStatusEducacion" />
                 <ScalarProperty Name="status" ColumnName="status" />
@@ -3305,7 +3305,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="vacanteTipoPuesto">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.vacanteTipoPuesto">
+            <EntityTypeMapping TypeName="verempleosModel.vacanteTipoPuesto">
               <MappingFragment StoreEntitySet="vacanteTipoPuesto">
                 <ScalarProperty Name="idVacanteTipoPuesto" ColumnName="idVacanteTipoPuesto" />
                 <ScalarProperty Name="descripcion" ColumnName="descripcion" />
@@ -3313,7 +3313,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="AlertaVacante">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.AlertaVacante">
+            <EntityTypeMapping TypeName="verempleosModel.AlertaVacante">
               <MappingFragment StoreEntitySet="AlertaVacante">
                 <ScalarProperty Name="IdAlerta" ColumnName="IdAlerta" />
                 <ScalarProperty Name="Asunto" ColumnName="Asunto" />
@@ -3326,7 +3326,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Geolocalizacion">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.Geolocalizacion">
+            <EntityTypeMapping TypeName="verempleosModel.Geolocalizacion">
               <MappingFragment StoreEntitySet="Geolocalizacion">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Latitud" ColumnName="Latitud" />
@@ -3336,7 +3336,7 @@ warning 6002: The table/view 'prueba_verempleos.dbo.Paypal' does not have a prim
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Paypal">
-            <EntityTypeMapping TypeName="prueba_verempleosModel.Paypal">
+            <EntityTypeMapping TypeName="verempleosModel.Paypal">
               <MappingFragment StoreEntitySet="Paypal">
                 <ScalarProperty Name="Identificador" ColumnName="Identificador" />
                 <ScalarProperty Name="id" ColumnName="id" />

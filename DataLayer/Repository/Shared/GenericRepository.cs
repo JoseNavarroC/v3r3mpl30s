@@ -14,8 +14,7 @@ namespace DataLayer.Repository.Shared
         protected readonly DbSet DbSet;
 
 
-        public GenericRepository(prueba_verempleosEntities dbConn) 
-            : base(dbConn)
+        public GenericRepository(VerEmpleosConn dbConn) : base(dbConn)
         {
             DbSet = dbConn.Set<Entity>();
         }

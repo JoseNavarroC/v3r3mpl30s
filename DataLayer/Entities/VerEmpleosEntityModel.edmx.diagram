@@ -4,100 +4,100 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="35511f2632a04206a51c9484cbbcb77f" Name="Diagram1" ZoomLevel="74">
-        <EntityTypeShape EntityType="prueba_verempleosModel.Alerta" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.AplicacionesIngles" Width="1.5" PointX="10.25" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.AplicacionesLPC" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.AplicacionesMEOL" Width="1.5" PointX="13.75" PointY="10.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.AplicacionesPsicoweb" Width="1.5" PointX="14.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.area" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.candidato" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.candidatoIdioma" Width="1.5" PointX="3" PointY="18.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.candidatoLicencia" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.candidatoPrograma" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.candidatoTitulo" Width="1.5" PointX="6" PointY="18.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.candidatoVacante" Width="1.5" PointX="3" PointY="27.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.ciudad" Width="1.5" PointX="10.25" PointY="4.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.configuracion" Width="1.5" PointX="3" PointY="31" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.CuentaPremium" Width="1.5" PointX="15.75" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.DatosDePW" Width="1.5" PointX="8.75" PointY="17.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.empresa" Width="1.5" PointX="6" PointY="27.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.empresaVeCurriculum" Width="1.5" PointX="8.25" PointY="29.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.envioCurriculum" Width="1.5" PointX="15.75" PointY="12.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.estado" Width="1.5" PointX="8" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.experienciaLaboral" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.giroEmpresa" Width="1.5" PointX="3.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.horario" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.idioma" Width="1.5" PointX="0.75" PointY="24.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.MembresiaEmpresa" Width="1.5" PointX="10.75" PointY="17.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.NotificacionPruebas" Width="1.5" PointX="12.75" PointY="17.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.pais" Width="1.5" PointX="5.75" PointY="4.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.preferencia" Width="1.5" PointX="15.75" PointY="15.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.preferenciaArea" Width="1.5" PointX="6" PointY="21.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.preferenciaHorario" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.preferenciaPuesto" Width="1.5" PointX="3" PointY="24.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.pregunta" Width="1.5" PointX="12.75" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.PreguntasIngles" Width="1.5" PointX="10.75" PointY="14.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.PreguntasOpcionesIngles" Width="1.5" PointX="13" PointY="14.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.PrivilegiosCandidato" Width="1.5" PointX="16.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.PrivilegiosEmpresa" Width="1.5" PointX="17.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.programa" Width="1.5" PointX="0.75" PointY="27.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.puesto" Width="1.5" PointX="0.75" PointY="30.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.referencia" Width="1.5" PointX="17.75" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.referenciaPregunta" Width="1.5" PointX="15" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.RespuestasIngles" Width="1.5" PointX="12.5" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.subArea" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.TipoCuentaCandidato" Width="1.5" PointX="17.75" PointY="12.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.TipoCuentaEmpresa" Width="1.5" PointX="17.75" PointY="15.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.tipoLicencia" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.titulo" Width="1.5" PointX="3.75" PointY="2.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.ubicacion" Width="1.5" PointX="10.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.usuario" Width="1.5" PointX="8" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.usuarioFacebook" Width="1.5" PointX="14.75" PointY="19.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacante" Width="1.5" PointX="17.75" PointY="18.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacanteEducacion" Width="1.5" PointX="11" PointY="11.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacanteIdioma" Width="1.5" PointX="6" PointY="24.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacanteNivelEducacion" Width="1.5" PointX="8.75" PointY="11.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacanteNivelIdioma" Width="1.5" PointX="3.75" PointY="35.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacanteStatusEducacion" Width="1.5" PointX="8.75" PointY="14.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.vacanteTipoPuesto" Width="1.5" PointX="18.75" PointY="5.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.AlertaVacante" Width="1.5" PointX="19.75" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.Geolocalizacion" Width="1.5" PointX="19.75" PointY="2.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="prueba_verempleosModel.Paypal" Width="1.5" PointX="19.75" PointY="12.125" IsExpanded="true" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_AplicacionesIngles_usuario" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_RespuestasIngles_AplicacionesIngles1" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_experienciaLaboral_areaTrabajo" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_preferenciaContieneArea_areaTrabajo" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_subArea_areaTrabajo" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK__experienc__idCan__65B6F546" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoAplicaVacante_informacionBasica" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoTieneLicencia_candidato" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoTieneTitulo_candidato" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoUtilizaProgramas_informacionBasica" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_configuracion_informacionBasica" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_userHablaIdioma_informacionBasica" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.fkHorarioCandidato" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.fkPuesto2Candidato" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.fkPuestoCandidato" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_userHablaIdioma_idioma" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoTieneLicencia_tipoLicencia" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoUtilizaPrograma_programa" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_candidatoTieneTitulo_titulo" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_ciudad_estado" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_empresa_areaTrabajo" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_empresaVeCurriculum_empresa" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_estado_pais" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_ubicacion_estado" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_experienciaLaboral_giroEmpresa" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_preferenciaTieneHorario_horario" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_vacanteTieneIdioma_idioma1" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_preferenciaContienePuesto_puestoDeseado" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_referenciaRespondePregunta_pregunta" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_PreguntasOpcionesIngles_PreguntasIngles" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_ubicacion_user" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_vacanteEducacion_vacanteNivelEducacion" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_vacanteEducacion_vacanteStatusEducacion" ManuallyRouted="false" />
-        <AssociationConnector Association="prueba_verempleosModel.FK_vacanteIdioma_vacanteNivelIdioma" ManuallyRouted="false" />
+      <Diagram DiagramId="92c0319ea9e1445f89c427ae4cec33b0" Name="Diagram1">
+        <EntityTypeShape EntityType="verempleosModel.Alerta" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.AplicacionesIngles" Width="1.5" PointX="10.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.AplicacionesLPC" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.AplicacionesMEOL" Width="1.5" PointX="13.75" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.AplicacionesPsicoweb" Width="1.5" PointX="14.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.area" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.candidato" Width="1.5" PointX="0.75" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.candidatoIdioma" Width="1.5" PointX="3" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.candidatoLicencia" Width="1.5" PointX="3" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.candidatoPrograma" Width="1.5" PointX="3" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.candidatoTitulo" Width="1.5" PointX="6" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.candidatoVacante" Width="1.5" PointX="3" PointY="27.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.ciudad" Width="1.5" PointX="10.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.configuracion" Width="1.5" PointX="3" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.CuentaPremium" Width="1.5" PointX="15.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.DatosDePW" Width="1.5" PointX="8.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.empresa" Width="1.5" PointX="6" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.empresaVeCurriculum" Width="1.5" PointX="8.25" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.envioCurriculum" Width="1.5" PointX="15.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.estado" Width="1.5" PointX="8" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.experienciaLaboral" Width="1.5" PointX="6" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.giroEmpresa" Width="1.5" PointX="3.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.horario" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.idioma" Width="1.5" PointX="0.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.MembresiaEmpresa" Width="1.5" PointX="10.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.NotificacionPruebas" Width="1.5" PointX="12.75" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.pais" Width="1.5" PointX="5.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.preferencia" Width="1.5" PointX="15.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.preferenciaArea" Width="1.5" PointX="6" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.preferenciaHorario" Width="1.5" PointX="3" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.preferenciaPuesto" Width="1.5" PointX="3" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.pregunta" Width="1.5" PointX="12.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.PreguntasIngles" Width="1.5" PointX="10.75" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.PreguntasOpcionesIngles" Width="1.5" PointX="13" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.PrivilegiosCandidato" Width="1.5" PointX="16.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.PrivilegiosEmpresa" Width="1.5" PointX="17.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.programa" Width="1.5" PointX="0.75" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.puesto" Width="1.5" PointX="0.75" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.referencia" Width="1.5" PointX="17.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.referenciaPregunta" Width="1.5" PointX="15" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.RespuestasIngles" Width="1.5" PointX="12.5" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.subArea" Width="1.5" PointX="6" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.TipoCuentaCandidato" Width="1.5" PointX="17.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.TipoCuentaEmpresa" Width="1.5" PointX="17.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.tipoLicencia" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.titulo" Width="1.5" PointX="3.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.ubicacion" Width="1.5" PointX="10.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.usuario" Width="1.5" PointX="8" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.usuarioFacebook" Width="1.5" PointX="14.75" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacante" Width="1.5" PointX="17.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacanteEducacion" Width="1.5" PointX="11" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacanteIdioma" Width="1.5" PointX="6" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacanteNivelEducacion" Width="1.5" PointX="8.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacanteNivelIdioma" Width="1.5" PointX="3.75" PointY="35.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacanteStatusEducacion" Width="1.5" PointX="8.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.vacanteTipoPuesto" Width="1.5" PointX="18.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.AlertaVacante" Width="1.5" PointX="19.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.Geolocalizacion" Width="1.5" PointX="19.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="verempleosModel.Paypal" Width="1.5" PointX="19.75" PointY="12.125" IsExpanded="true" />
+        <AssociationConnector Association="verempleosModel.FK_AplicacionesIngles_usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_RespuestasIngles_AplicacionesIngles1" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_experienciaLaboral_areaTrabajo" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_preferenciaContieneArea_areaTrabajo" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_subArea_areaTrabajo" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK__experienc__idCan__65B6F546" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoAplicaVacante_informacionBasica" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoTieneLicencia_candidato" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoTieneTitulo_candidato" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoUtilizaProgramas_informacionBasica" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_configuracion_informacionBasica" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_userHablaIdioma_informacionBasica" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.fkHorarioCandidato" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.fkPuesto2Candidato" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.fkPuestoCandidato" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_userHablaIdioma_idioma" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoTieneLicencia_tipoLicencia" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoUtilizaPrograma_programa" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_candidatoTieneTitulo_titulo" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_ciudad_estado" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_empresa_areaTrabajo" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_empresaVeCurriculum_empresa" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_estado_pais" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_ubicacion_estado" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_experienciaLaboral_giroEmpresa" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_preferenciaTieneHorario_horario" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_vacanteTieneIdioma_idioma1" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_preferenciaContienePuesto_puestoDeseado" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_referenciaRespondePregunta_pregunta" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_PreguntasOpcionesIngles_PreguntasIngles" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_ubicacion_user" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_vacanteEducacion_vacanteNivelEducacion" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_vacanteEducacion_vacanteStatusEducacion" ManuallyRouted="false" />
+        <AssociationConnector Association="verempleosModel.FK_vacanteIdioma_vacanteNivelIdioma" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

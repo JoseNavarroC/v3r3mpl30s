@@ -6,13 +6,13 @@ namespace DataLayer.Repository.Shared
     public abstract class BaseRepositoy : IDisposable
     {
 
-        public prueba_verempleosEntities DbConn;
+        public VerEmpleosConn DbConn;
 
         protected BaseRepositoy() {
-            DbConn = new prueba_verempleosEntities();
+            DbConn = new VerEmpleosConn();
         }
 
-        protected BaseRepositoy(prueba_verempleosEntities dbConn)
+        protected BaseRepositoy(VerEmpleosConn dbConn)
         {
             DbConn = dbConn;
         }
