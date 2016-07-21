@@ -22,7 +22,7 @@ namespace BusinessLayer.Services
                     var user = new usuario
                     {
                         Email = model.Email,
-                        Contrasenia = model.Passwod,
+                        Contrasenia = model.Password,
                         EdoConfirmacion = false,
                         Tipo = false
                     };
