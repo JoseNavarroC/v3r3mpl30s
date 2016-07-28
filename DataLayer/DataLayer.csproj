@@ -250,6 +250,7 @@
       <DependentUpon>VerEmpleosEntityModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\VacanteRepository\CityRepository.cs" />
     <Compile Include="Repository\VacanteRepository\CountryRespository.cs" />
     <Compile Include="Repository\VacanteRepository\StateRepository.cs" />
     <Compile Include="Repository\VacanteRepository\UsuarioRepository.cs" />
