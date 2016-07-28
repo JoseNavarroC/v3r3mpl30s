@@ -12,6 +12,7 @@ namespace VerEmpleosWebAPI.Controllers
     public class VacanteController : ApiController
     {
         public IEnumerable<VacanteModel> Post([FromBody] string q) {
+
             return VacanteService.getVacanteBySubStr(q);   
         }
 
