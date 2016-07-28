@@ -15,5 +15,9 @@ namespace VerEmpleosWebAPI.Controllers
 
             return VacanteService.getVacanteBySubStr(q);   
         }
+
+        public VacanteModel GetVacante(int id) {
+            return VacanteService.getVacanteById(id);   
+        }
     }
 }
