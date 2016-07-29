@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using VerEmpleos.Filters;
 
 namespace VerEmpleosWebAPI
 {
@@ -11,6 +12,7 @@ namespace VerEmpleosWebAPI
         {
             // Web API configuration and services
 
+            GlobalConfiguration.Configuration.Filters.Add(new UserAuthenticationFilter());
             // Web API routes
             config.MapHttpAttributeRoutes();
 

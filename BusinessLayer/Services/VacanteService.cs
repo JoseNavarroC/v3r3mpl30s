@@ -15,7 +15,7 @@ namespace BusinessLayer.Services
             {
                 using (var repository = new VacanteRepository())
                 {
-                    return repository.DbConn.vacante.Where(e => e.Puesto.ToLower().Contains(subStr.ToLower()))
+                    return repository.DbConn.vacante.Where(e => (e.Puesto.ToLower()).Contains(subStr.ToLower()))
                         .Select(e => new VacanteModel
                         {
                             IdVacante = e.IdVacante,
@@ -28,7 +28,34 @@ namespace BusinessLayer.Services
                 return null;
             }
         }
-       
+
+        public static IEnumerable<VacanteModel> getVacanteAdvanceSeach(VacanteModel model)
+        {
+            try
+            {
+                using (var repository = new VacanteRepository())
+                {
+                    return repository.DbConn.vacante.Where(
+                        e => (e.Puesto.ToLower()).Contains(model.Puesto.ToLower())
+                        && e.IdArea == model.IdArea 
+                        && e.IdPais == model.IdPais
+                        && e.IdEstado == model.IdEstado
+                        && e.FechaPublicacion >= model.FechaPublicacion
+                        && e.FechaFinPublicacion <= model.FechaFinPublicacion)
+                        .Select(e => new VacanteModel
+                        {
+                            IdVacante = e.IdVacante,
+                            Puesto = e.Puesto
+                        }).ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+
         public static VacanteModel getVacanteById(int Id)
         {
             try

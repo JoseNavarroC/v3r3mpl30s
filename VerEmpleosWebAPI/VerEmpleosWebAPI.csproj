@@ -149,9 +149,10 @@
     <Compile Include="Controllers\CityController.cs" />
     <Compile Include="Controllers\CountryController.cs" />
     <Compile Include="Controllers\RegisterUserController.cs" />
-    <Compile Include="Controllers\ResumeSearchController.cs" />
     <Compile Include="Controllers\StateController.cs" />
+    <Compile Include="Controllers\VacanteAdvancedSearchController.cs" />
     <Compile Include="Controllers\VacanteController.cs" />
+    <Compile Include="Filters\UserAuthenticationFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
