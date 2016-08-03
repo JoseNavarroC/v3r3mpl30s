@@ -33,7 +33,7 @@ namespace BusinessLayer.Services
             }
             
         }
-        public static void registerUser(UserModel model)
+        public static bool registerUser(UserModel model)
         {
             try
             {
@@ -51,12 +51,12 @@ namespace BusinessLayer.Services
 
                     repository.DbConn.usuario.Add(user);
                     repository.DbConn.SaveChanges();
+                    return true;
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                return false;
             }
         }
     } 

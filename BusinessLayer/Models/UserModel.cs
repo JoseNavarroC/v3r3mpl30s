@@ -14,6 +14,10 @@ namespace BusinessLayer.Models
         public string Email { get; set; }
 
 
+        public UserModel() : base("Basic")
+        {
+
+        }
         public UserModel(string userName, string password)
             : base(userName, "Basic")
         {
